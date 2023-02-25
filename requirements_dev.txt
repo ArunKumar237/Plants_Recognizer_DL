@@ -13,6 +13,7 @@ joblib
 types-PyYAML
 scipy
 mlflow==1.26.1
+gdown
 -e .
 
 ## Dev requirements
