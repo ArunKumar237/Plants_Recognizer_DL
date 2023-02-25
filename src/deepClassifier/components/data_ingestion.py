@@ -31,8 +31,9 @@ class DataIngestion:
             zf.extract(f, working_dir)
 
         if os.path.getsize(target_filepath) == 0:
-            os.remove(target_filepath)
             logger.info(f"Removing file: {target_filepath} of size {get_size(Path(target_filepath))}")
+            os.remove(target_filepath)
+            
 
     def unzip_and_clean(self):
         logger.info(f"Unzipping and Removing unwanted files")
