@@ -1,3 +1,3 @@
-# DL_DVC_TEMPLATE
+# Plants_Recogizer using Deep Learning and Computer Vision
 
-This is a template can be used for projects
+

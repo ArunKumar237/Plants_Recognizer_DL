@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 __version__ = "0.0.0"
 
-REPO_NAME = "CNN_Image_Classifier"
+REPO_NAME = "Plants_Recognizer_DL"
 AUTHOR_USER_NAME = "ArunKumar237"
 SRC_REPO = "deepClassifier"
 AUTHOR_EMAIL = "arunchary237@gmail.com"
@@ -15,7 +15,7 @@ setuptools.setup(
     version=__version__,
     author=AUTHOR_USER_NAME,
     author_email=AUTHOR_EMAIL,
-    description="A small python package for CNN app",
+    description="A small python package for Plants Recognizing CNN app",
     long_description=long_description,
     long_description_content="text/markdown",
     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
