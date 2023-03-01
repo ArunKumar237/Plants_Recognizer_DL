@@ -129,3 +129,6 @@ dmypy.json
 .pyre/
 /artifacts
 research/data
+dvc.lock
+.dvcignore
+.dvc

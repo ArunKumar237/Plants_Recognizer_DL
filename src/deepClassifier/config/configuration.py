@@ -46,7 +46,7 @@ class ConfigurationManager:
             params_weights=self.params.WEIGHTS,
             params_classes=self.params.CLASSES
         )
-
+        
         return prepare_base_model_config
 
     def get_prepare_callback_config(self) -> PrepareCallbacksConfig:
@@ -69,7 +69,7 @@ class ConfigurationManager:
         training = self.config.training
         prepare_base_model = self.config.prepare_base_model
         params = self.params
-        training_data = os.path.join(self.config.data_ingestion.unzip_dir, "100 leaves plant species")
+        training_data = os.path.join(self.config.data_ingestion.unzip_dir, "100 leaves plant species/data")
         create_directories([
             Path(training.root_dir)
         ])
