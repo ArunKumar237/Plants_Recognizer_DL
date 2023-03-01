@@ -10,7 +10,7 @@ import gdown
 # deep Classifier project
 
 """
-gdown.download(url='https://drive.google.com/uc?export=download&id=1-Rvutw0DnXi4TjeicgLxOxLjrWWBpeo2', quiet=True) #DOWNLOADING MODEL WHICH WAS TRAINED IN COLAB
+# gdown.download(url='https://drive.google.com/uc?export=download&id=1-Rvutw0DnXi4TjeicgLxOxLjrWWBpeo2', quiet=True) #DOWNLOADING MODEL WHICH WAS TRAINED IN COLAB
 
 
 model = tf.keras.models.load_model('final_model.h5') 
