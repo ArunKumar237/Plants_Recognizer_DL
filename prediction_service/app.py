@@ -14,8 +14,12 @@ import tensorflow as tf
 import webbrowser
 import numpy as np
 import gdown
+import os
 
-# gdown.download(url='https://drive.google.com/uc?export=download&id=1-Rvutw0DnXi4TjeicgLxOxLjrWWBpeo2', quiet=True) #DOWNLOADING MODEL WHICH WAS TRAINED IN COLAB
+def download_model():
+    print("Downloading model.................")
+    gdown.download(url='https://drive.google.com/uc?export=download&id=1-Rvutw0DnXi4TjeicgLxOxLjrWWBpeo2', quiet=True) #DOWNLOADING MODEL WHICH WAS TRAINED IN COLAB
+    print("Model Download Completed\n")
 
 def download_desc(search_term):
     URL= 'https://en.wikipedia.org/wiki/'+search_term
@@ -23,6 +27,11 @@ def download_desc(search_term):
     soup = bs(page.content, 'html.parser')
     desc = soup.find_all('p')[1].get_text()
     return desc
+
+if os.path.isfile('final_model.h5') == False:
+    download_model()
+else:
+    pass
 
 model = tf.keras.models.load_model('final_model.h5') 
 uploaded_file = st.file_uploader("Choose a file")
@@ -847,7 +856,7 @@ if uploaded_file is not None:
 col1, col2, col3 = st.columns([1,2,1])
 with col1:
     if st.button('Git hub link'):
-        webbrowser.open_new_tab(url='https://github.com/ArunKumar237/movie-recommendation')
+        webbrowser.open_new_tab(url='https://github.com/ArunKumar237/Plants_Recognizer_DL')
     if st.button('linkedin link'):
         webbrowser.open_new_tab(url='www.linkedin.com/in/panuganti-arun-kumar')
 
