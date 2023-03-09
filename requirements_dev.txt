@@ -14,6 +14,7 @@ types-PyYAML
 scipy
 mlflow==1.26.1
 gdown
+selenium
 -e .
 
 ## Dev requirements
