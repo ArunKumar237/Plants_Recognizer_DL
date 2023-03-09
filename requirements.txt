@@ -15,4 +15,6 @@ scipy
 mlflow==1.26.1
 gdown
 selenium
+beautifulsoup4
+skimage
 -e .
